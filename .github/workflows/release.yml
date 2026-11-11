@@ -1,0 +1,23 @@
+name: Publish Windows patch
+on:
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          zip="Takeover2-ZH-$GITHUB_REF_NAME.zip"
+          git archive --format=zip --output="$zip" HEAD Install.cmd Uninstall.cmd Patch.ps1 README.md LICENSE src translations vendor
+          sha256sum "$zip" > "$zip.sha256"
+          gh release create "$GITHUB_REF_NAME" "$zip" "$zip.sha256" \
+            --verify-tag --title "Takeover 2 简体中文 $GITHUB_REF_NAME" \
+            --notes '适用 Windows Steam 版 Build 26531378。下载 ZIP 并完整解压，退出游戏后双击 Install.cmd。卸载时双击 Uninstall.cmd。'

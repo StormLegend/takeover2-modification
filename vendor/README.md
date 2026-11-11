@@ -1,0 +1,1 @@
+Mono.Cecil.dll is the unmodified lib/net40/Mono.Cecil.dll from NuGet package [Mono.Cecil 0.11.6](https://www.nuget.org/packages/Mono.Cecil/0.11.6). It is bundled so installation works offline. See [the license](Mono.Cecil.LICENSE.txt).
