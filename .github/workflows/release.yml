@@ -20,4 +20,4 @@ jobs:
           sha256sum "$zip" > "$zip.sha256"
           gh release create "$GITHUB_REF_NAME" "$zip" "$zip.sha256" \
             --verify-tag --title "Takeover 2 简体中文与手枪弹药修改 $GITHUB_REF_NAME" \
-            --notes '适用 Windows Steam 版 Build 26531378。v1.1.0 增加了人工润色的中文菜单、教程和成就文本，并包含手枪弹药修改（上限 10,000 发、每包 +500 发）。下载 ZIP 并完整解压，退出游戏后双击 Install.cmd；卸载时双击 Uninstall.cmd。本项目仅供学习和非商业使用。'
+            --notes '适用 Windows Steam 版 Build 26580614。v1.2.0 修复 Steam 更新后补丁失效的问题，并保留人工润色的中文菜单、教程和成就文本，以及手枪弹药修改（上限 10,000 发、每包 +500 发）。下载 ZIP 并完整解压，退出游戏后双击 Install.cmd；卸载时双击 Uninstall.cmd。本项目仅供学习和非商业使用。'

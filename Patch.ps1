@@ -4,9 +4,9 @@ param(
     [string]$GamePath
 )
 $ErrorActionPreference = 'Stop'
-$build = '26531378'
+$build = '26580614'
 $original = [ordered]@{
-    'Assembly-CSharp.dll'   = '7D0D4A6BDC6707EFEDF203AFD0DA63018758EE042F8E29BEEA7D0B6778B7DB7B'
+    'Assembly-CSharp.dll'   = '3F6CF3A832FD0A2FF6D6DC36F9C7C9A04622630E17A412BFF83C9B70DAB45E52'
     'Unity.TextMeshPro.dll' = '87FEA8C37344842CF6AF4AFF6AA6978F0445AA7F389DD271B4F71E01FBF653AB'
     'UnityEngine.UI.dll'    = 'BE6AB48ECE53AF48FB6ED0D58BB92DB712CC8F827D0D9577F1DBF5D48F9DD3AA'
 }
@@ -101,7 +101,23 @@ try {
         if ((Hash-File (Join-Path $managed $name)) -ne $original[$name]) { throw "只支持 Steam Build $build 的原版文件。校验不匹配：$name。" }
     }
     foreach ($name in $payload) {
-        if (Test-Path -LiteralPath (Join-Path $managed $name)) { throw "已有同名文件：$name。请先移除旧版补丁。" }
+        $existing = Join-Path $managed $name
+        if (Test-Path -LiteralPath $existing) {
+            # Steam updates can leave the old patch payload behind while replacing
+            # the patched game DLLs. Remove only payloads whose contents match the
+            # previous release or the current repository, then repair in place.
+            $known = $false
+            if ($name -eq 'TakeoverChinese.dll') {
+                $known = (Hash-File $existing) -in @(
+                    '66B4A1B8A970C4470EA4D177E0F4672248774CEAC31CF194C2F400085BDFE1E5',
+                    '4309512A6256DEC81442371D9AA5B6413CD60A8442A08621B51F7C3358578064'
+                )
+            } else {
+                $known = (Hash-File $existing) -eq (Hash-File (Join-Path $PSScriptRoot "translations\$name"))
+            }
+            if ($known) { [IO.File]::Delete($existing) }
+            else { throw "已有同名文件：$name。请先移除旧版补丁。" }
+        }
     }
     $compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
     if (-not [IO.File]::Exists($compiler)) { throw '找不到 Windows 自带的 .NET Framework C# 编译器。' }
