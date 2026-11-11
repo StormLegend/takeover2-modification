@@ -2,20 +2,20 @@ OPTIONS_1=休闲
 OPTIONS_2=经典
 OPTIONS_3=硬核
 OPTIONS_4=狂热
-OPTIONS_5=轻松游玩，适合想体验低难度挑战的玩家。
-OPTIONS_6=《Takeover 2》的标准难度，推荐给熟悉清版动作游戏的玩家。
-OPTIONS_7=挑战更严苛。敌人打得更疼，你也更难从失误中脱身。
-OPTIONS_8=敌人极为凶猛，伤害高，几乎不容失误。只推荐给硬核中的硬核玩家。
+OPTIONS_5=玩法更轻松，适合想体验低难度挑战的玩家。
+OPTIONS_6=Takeover 2 的标准体验，推荐熟悉清版动作游戏的玩家。
+OPTIONS_7=挑战升级。敌人攻击更重，也更快抓住你的失误。
+OPTIONS_8=敌人极其凶猛，伤害很高，几乎不给你犯错的余地。只适合真正的狂人。
 OPTIONS_10=在街机模式接受 Overtake 挑战即可解锁。
 OPTIONS_11=在街机模式接受 Jet-Fury 挑战即可解锁。
 OPTIONS_12=通关街机模式即可解锁。
-OPTIONS_13=在街机模式抵达相应关卡即可解锁。
+OPTIONS_13=在街机模式推进到对应关卡即可解锁。
 OPTIONS_14=连接失败。
 OPTIONS_15=正在连接……
-OPTIONS_16=使用 Ethan 通关街机模式，解锁他的配色。
-OPTIONS_17=使用 Megan 通关街机模式，解锁她的配色。
-OPTIONS_18=使用 Connor 通关街机模式，解锁他的配色。
-OPTIONS_19=使用 Amy 通关街机模式，解锁她的配色。
+OPTIONS_16=使用 Ethan 通关街机模式即可解锁他的配色。
+OPTIONS_17=使用 Megan 通关街机模式即可解锁她的配色。
+OPTIONS_18=使用 Connor 通关街机模式即可解锁他的配色。
+OPTIONS_19=使用 Amy 通关街机模式即可解锁她的配色。
 OPTIONS_20=按 <sprite name="Icon_MenuNext"> 修改
 OPTIONS_21=按任意键
 OPTIONS_22=下一步 <sprite name="Icon_MenuNext">
@@ -77,14 +77,14 @@ OPTIONS_80=搜索 <sprite name="Icon_MenuNext">
 ACHIEVEMENT_2=以经典难度通关。
 ACHIEVEMENT_4=以硬核难度通关。
 ACHIEVEMENT_6=以狂热难度通关。
-ACHIEVEMENT_8=使用所有可玩角色各通关一次。
-ACHIEVEMENT_10=在同一次流程中施展 20 次枪械终结技。
-ACHIEVEMENT_12=在同一次流程中成功招架 20 次。
+ACHIEVEMENT_8=使用全部可玩角色各通关一次。
+ACHIEVEMENT_10=单次流程中完成 20 次枪械终结技。
+ACHIEVEMENT_12=单次流程中成功招架 20 次。
 ACHIEVEMENT_14=至少在一个关卡取得 S 级评价。
-ACHIEVEMENT_16=在连击不中断的情况下完成一个关卡。
-ACHIEVEMENT_18=在 Overtake 中获得第一名。
+ACHIEVEMENT_16=在连击不断的情况下完成一个关卡。
+ACHIEVEMENT_18=在 Overtake 中拿下第一名。
 ACHIEVEMENT_20=在 Jet-Fury 中击落至少 20 个目标。
-ACHIEVEMENT_22=在所有挑战关卡中获得 3 星。
+ACHIEVEMENT_22=所有挑战关卡均获得 3 星。
 UI_1=连击！
 UI_2=连击中断！
 UI_3=完美！
@@ -94,16 +94,16 @@ UI_6=精彩！
 UI_7=太强了！
 UI_8=不可思议！
 UI_9=简直疯狂！
-UI_10=施展 3 次枪械终结技！
+UI_10=完成 3 次枪械终结技！
 UI_11=别被击中！
 UI_12=完成 5 次投技！
-UI_13=把敌人砸到墙上 5 次！
+UI_13=将敌人砸墙 5 次！
 UI_14=用场景物品击中敌人 5 次！
 UI_15=打出 15 连击！
 UI_16=打出 25 连击！
 UI_17=打出 35 连击！
 UI_18=完成 5 次空中攻击！
-UI_19=踢击倒地敌人 5 次！
+UI_19=踢中 5 名倒地的敌人！
 UI_20=挑战成功！
 UI_21=挑战失败！
 UI_22=接受
@@ -120,14 +120,14 @@ UI_32=当前圈
 UI_33=上一圈
 UI_34=最快圈
 UI_35=方向错误！
-UI_36=正在离开作战区，立即掉头！
-UI_37=来袭导弹！
+UI_36=即将离开战斗区域，马上掉头！
+UI_37=导弹来袭！
 UI_38=被导弹击中！
-UI_39=已躲过导弹！
+UI_39=躲过导弹！
 UI_40=高度
 UI_41=导弹
 UI_42=热诱弹
-UI_43=规避
+UI_43=闪避
 BONUS_SCORE_1=全垒打！ +50
 BONUS_SCORE_2=利斧重击！ +100
 BONUS_SCORE_3=电力十足！ +25
@@ -157,12 +157,12 @@ BONUS_SCORE_26=斧劈重击！ +100
 BONUS_SCORE_27=暴打！ +25
 BONUS_SCORE_28=肩撞！ +25
 BONUS_SCORE_29=击落直升机！ +1000
-TUTORIAL_1=交替使用拳击 <sprite name="Icon_Punch"> 和踢击 <sprite name="Icon_Kick"> 延续连击。连击越高，伤害越大！
+TUTORIAL_1=交替使用拳击 <sprite name="Icon_Punch"> 和踢击 <sprite name="Icon_Kick"> 来保持连击。连击越高，伤害越大！
 TUTORIAL_2=用上 <sprite name="Icon_Up"> ＋拳击 <sprite name="Icon_Punch"> 收招，把敌人打上半空。别让他们落地！
 TUTORIAL_3=用下 <sprite name="Icon_Down"> ＋拳击 <sprite name="Icon_Punch"> 收招，把敌人砸晕。按互动 <sprite name="Icon_Gun_Finisher"> 给对手最后一击。
-TUTORIAL_4=走近敌人就能抓住对方。按后 <sprite name="Icon_Left"> ＋拳击 <sprite name="Icon_Punch"> 将其扔出。拿敌人当投掷物也很好使！
+TUTORIAL_4=靠近敌人即可抓住对方。按后 <sprite name="Icon_Left"> ＋拳击 <sprite name="Icon_Punch"> 将其扔出。拿敌人当投掷物也很好使！
 TUTORIAL_5=按招架 <sprite name="Icon_block"> 挡开攻击，再接拳击 <sprite name="Icon_Punch"> 或踢击 <sprite name="Icon_Kick">，打出强力反击！
-TUTORIAL_6=按互动 <sprite name="Icon_Gun_Finisher"> 捡起物品，也可以按踢击 <sprite name="Icon_Kick"> 把物品踢出去。倒地的敌人也能踢！
+TUTORIAL_6=按互动 <sprite name="Icon_Gun_Finisher"> 拾取物品，也可以按踢击 <sprite name="Icon_Kick"> 把物品踢出去。倒地的敌人也能踢！
 TUTORIAL_7=按住瞄准 <sprite name="Icon_Handgun"> 举枪，再按拳击 <sprite name="Icon_Punch"> 开火。别浪费子弹！
 TUTORIAL_8=善用屏幕边缘。把敌人打向墙壁，让他们反弹后继续浮空！
 TUTORIAL_9=按必杀技 <sprite name="Icon_Special"> 发动强力攻击。它会消耗生命值，别乱用！
@@ -212,9 +212,9 @@ CUTSCENE_02_3=Vanessa，宝贝！@@@@@
 CUTSCENE_02_4=我们来救你们了！Connor，能叫人来接我们吗？@@@@@
 CUTSCENE_02_5=交给我，兄弟！小鬼，你跟我们一起走吗？@@@@@
 CUTSCENE_02_6=嗯，我是说……好吧。@@@@@
-ENDING_01_1=Freya 的阴谋让 SHPD 元气大伤、四分五裂。Ethan Rivers 接手了全市的执法工作。@他致力于和社区负责人直接合作，解决眼下的问题，防范潜在威胁，为 Steel Haven 带来一段安宁的日子。
+ENDING_01_1=Freya 的阴谋让 SHPD 元气大伤，几乎四分五裂。Ethan Rivers 接过全市治安的重担。@他直接与社区负责人合作，解决眼前的问题，防范潜在威胁，让 Steel Haven 迎来一段安宁的日子。
 ENDING_01_2=随着恐慌消退，Steel Haven 的街头重归平静，Megan Brooks 回到赛场，继续自己的冠军车手生涯。@凭着钢铁般的意志和赛道上的无畏表现，她又赢下了不少奖杯和奖金，用来照顾自己珍视的家人与朋友。
-ENDING_01_3=Freya 掀起的暴力浪潮终于平息，Connor Grayson 回去经营自己的酒吧 The Roost。@后来，他想为这座城市和这里的年轻人多做些事，便卖掉酒吧，用这笔钱开了几家面向本地青少年的健身房，亲自教他们防身术和训练技巧。
+ENDING_01_3=Freya 掀起的暴力浪潮终于平息，Connor Grayson 回去经营自己的酒吧 The Roost。@后来，他想为这座城市和当地年轻人多做点事，于是卖掉酒吧，用这笔钱开了几家面向青少年的健身房，亲自教他们防身和训练。
 ENDING_01_4=Freya 的骗局败露后，Amy Valiant 对 Steel Haven 的生活渐渐没了兴趣，觉得自己已不再属于这里。@她最终踏上旅途，走遍全国，参加各种地下格斗赛。@一场场胜利满足了她对战斗的渴望，也让她声名远扬，令对手闻风丧胆……她很快就爱上了这种感觉。
 DIALOGUE_001_1=小鬼，别站马路上！危险！
 DIALOGUE_001_2=忙着呢，打头目。

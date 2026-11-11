@@ -3,7 +3,7 @@ THANK YOU FOR PLAYING!	感谢游玩！
 CONTINUE THE FIGHT !	继续战斗！
 WISHLIST NOW	加入愿望单
 CONTINUE	继续
-GLOBAL top 10	全球前十
+GLOBAL top 10	全球前十名
 LOCAL	本地
 YOUR RANKING	你的排名
 CHARACTER SELECT	选择角色
@@ -15,8 +15,8 @@ PAUSE	暂停
 QUIT	退出
 OPTIONS	设置
 GAME	游戏
-OVER!	结束！
-STAGE CLEAR	关卡完成
+OVER!	游戏结束！
+STAGE CLEAR	关卡通过！
 BONUS	额外内容
 SCORE	分数
 SCORE:	分数：
@@ -62,7 +62,7 @@ ACCEPT	接受
 DECLINE	拒绝
 FINISHED!	挑战结束！
 YOU PLACED:	你的名次：
-FIGHT!	开打！
+FIGHT!	开战！
 BREAK!	连击中断！
 HITS!	连击！
 FUCK YOU!	去你妈的！
@@ -75,14 +75,14 @@ KILL	杀死
 TALK	对话
 SEARCH	搜索
 MISSILE HIT!	被导弹击中！
-MISSILE INCOMING!	来袭导弹！
-LEAVING COMBAT ZONE. TURN BACK!	正在离开作战区，立即掉头！
+MISSILE INCOMING!	导弹来袭！
+LEAVING COMBAT ZONE. TURN BACK!	即将离开战斗区域，马上掉头！
 TURN BACK!	立即掉头！
 FLARES	热诱弹
 TOTAL KIILS	击杀总数
 ALTITUDE	高度
 MISSILES	导弹
-EVADE	规避
+EVADE	闪避
 WIPEOUT!	撞毁！
 Best Lap	最快圈
 Current Lap	当前圈
@@ -93,14 +93,14 @@ CASUAL	休闲
 CLASSIC	经典
 HARDCORE	硬核
 MANIA	狂热
-A more relaxed way to play. Recommended for a lighter challenge.	轻松游玩，适合想体验低难度挑战的玩家。
-The intended Takeover 2 experience. Recommended for experienced beat 'em up players.	《Takeover 2》的标准难度，推荐给熟悉清版动作游戏的玩家。
-A tougher challenge. Enemies hit harder and punish mistakes faster.	挑战更严苛。敌人打得更疼，你也更难从失误中脱身。
-Maximum aggression, high damage, and little room for error. For maniacs only.	敌人极为凶猛，伤害高，几乎不容失误。只推荐给硬核中的硬核玩家。
+A more relaxed way to play. Recommended for a lighter challenge.	玩法更轻松，适合想体验低难度挑战的玩家。
+The intended Takeover 2 experience. Recommended for experienced beat 'em up players.	Takeover 2 的标准体验，推荐熟悉清版动作游戏的玩家。
+A tougher challenge. Enemies hit harder and punish mistakes faster.	挑战升级。敌人攻击更重，也更快抓住你的失误。
+Maximum aggression, high damage, and little room for error. For maniacs only.	敌人极其凶猛，伤害很高，几乎不给你犯错的余地。只适合真正的狂人。
 Accept the Overtake Challenge in Arcade mode to unlock.	在街机模式接受 Overtake 挑战即可解锁。
 Accept the Jet-Fury Challenge in Arcade mode to unlock.	在街机模式接受 Jet-Fury 挑战即可解锁。
 Complete Arcade Mode to unlock.	通关街机模式即可解锁。
-Unlock stages by reaching them in Arcade mode.	在街机模式抵达相应关卡即可解锁。
+Unlock stages by reaching them in Arcade mode.	在街机模式推进到对应关卡即可解锁。
 Connection Failed.	连接失败。
 Connecting...	正在连接……
 Complete Arcade Mode with Ethan to unlock his color customization.	使用 Ethan 通关街机模式，解锁他的配色。
@@ -135,17 +135,17 @@ KILLS	击杀数
 BEST POSITION	最佳名次
 P2 PRESS START	玩家 2 按开始键
 LOADING	载入中
-Complete the game on Classic difficulty.	以经典难度通关。
-Complete the game on Hardcore difficulty.	以硬核难度通关。
-Complete the game on Mania difficulty.	以狂热难度通关。
-Complete the game with all playable characters.	使用所有可玩角色各通关一次。
-Perform 20 gun finishers in a single playthrough.	在同一次流程中施展 20 次枪械终结技。
-Perform 20 successful parries in a single playthrough.	在同一次流程中成功招架 20 次。
-Achieve an S Rank on at least one stage.	至少在一个关卡取得 S 级评价。
-Complete a stage without breaking your combo.	在连击不中断的情况下完成一个关卡。
-Finish in 1st place in Overtake.	在 Overtake 中获得第一名。
+Complete the game on Classic difficulty.	以经典难度通关游戏。
+Complete the game on Hardcore difficulty.	以硬核难度通关游戏。
+Complete the game on Mania difficulty.	以狂热难度通关游戏。
+Complete the game with all playable characters.	使用全部可玩角色各通关一次。
+Perform 20 gun finishers in a single playthrough.	单次流程中完成 20 次枪械终结技。
+Perform 20 successful parries in a single playthrough.	单次流程中成功招架 20 次。
+Achieve an S Rank on at least one stage.	至少有一个关卡取得 S 级评价。
+Complete a stage without breaking your combo.	在连击不断的情况下完成一个关卡。
+Finish in 1st place in Overtake.	在 Overtake 中拿下第一名。
 Score at least 20 kills in Jet Fury.	在 Jet-Fury 中击落至少 20 个目标。
-Collect 3 stars on all Challenge Stages.	在所有挑战关卡中获得 3 星。
+Collect 3 stars on all Challenge Stages.	所有挑战关卡均获得 3 星。
 PERFECT!	完美！
 NICE!	不错！
 GREAT!	漂亮！
@@ -153,19 +153,19 @@ AMAZING!	精彩！
 AWESOME!	太强了！
 INCREDIBLE!	不可思议！
 INSANE!	简直疯狂！
-Perform 3 gun finishers!	施展 3 次枪械终结技！
+Perform 3 gun finishers!	完成 3 次枪械终结技！
 Avoid getting hit!	别被击中！
 Perform 5 throws!	完成 5 次投技！
-Perform 5 wall smashes!	把敌人砸到墙上 5 次！
+Perform 5 wall smashes!	将敌人砸墙 5 次！
 Perform 5 object hits!	用场景物品击中敌人 5 次！
 Perform a 15 hit combo!	打出 15 连击！
 Perform a 25 hit combo!	打出 25 连击！
 Perform a 35 hit combo!	打出 35 连击！
 Perform 5 air attacks!	完成 5 次空中攻击！
-Kick 5 downed enemies!	踢击倒地敌人 5 次！
+Kick 5 downed enemies!	踢中 5 名倒地的敌人！
 CLEARED!	挑战成功！
 FAILED!	挑战失败！
-MISSILE MISS!	已躲过导弹！
+MISSILE MISS!	躲过导弹！
 ON	开
 OFF	关
 on	开
@@ -182,8 +182,9 @@ Rank:	评级：
 normal	普通
 Complete the game on Normal difficulty.	以普通难度通关。
 Complete the game on Hard difficulty.	以困难难度通关。
-Finish 1st place in the racing stage.	在竞速关卡中获得第一名。
-Achieve a Perfect Combo.	达成一次完美连击。
+Finish 1st place in the racing stage.	在竞速关卡拿下第一名。
+Achieve a Perfect Combo.	打出完美连击。
 PERFECT \nCOMBO	完美\n连击
 CHALLENGE\nSTAGE 10	挑战\n第 10 关
 Km/h	公里/小时
+SNAKE	毒蛇
