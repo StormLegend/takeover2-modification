@@ -1,21 +1,10 @@
-MIT License
+Takeover 2 修改项目非商业使用声明
 
-Copyright (c) 2026 Takeover 2 ZH contributors
+本仓库的项目代码、补丁脚本和译文仅供个人学习、研究和非商业用途。
+未经项目维护者书面许可，不得出售、收费分发、捆绑商业产品，或用于任何商业服务。
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Takeover 2、游戏程序、素材、商标和其他原始内容属于其各自权利人。本项目是非官方修改，
+不代表游戏开发者或发行商。安装本项目之前请确认你拥有合法的游戏副本。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+vendor/Mono.Cecil.dll 是第三方组件，适用其原始许可证，详见 vendor/Mono.Cecil.LICENSE.txt。
+除该第三方组件外，本仓库内容按本声明提供，不授予商业使用权。

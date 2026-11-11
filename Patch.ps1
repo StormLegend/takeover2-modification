@@ -122,6 +122,12 @@ try {
         Compile $patcher (Join-Path $PSScriptRoot 'src\Patch.cs') @($cecil)
         & $patcher $managed $patched $helper $managed
         if ($LASTEXITCODE -ne 0) { throw '生成补丁失败，游戏文件未修改。' }
+        $pistolPatcher = Join-Path $stage PatchPistol.exe
+        Compile $pistolPatcher (Join-Path $PSScriptRoot 'src\PatchPistol.cs') @($cecil)
+        $pistolOutput = Join-Path $stage 'Assembly-CSharp-pistol.dll'
+        & $pistolPatcher (Join-Path $patched 'Assembly-CSharp.dll') (Join-Path $managed 'PlayMaker.dll') $pistolOutput
+        if ($LASTEXITCODE -ne 0 -or -not [IO.File]::Exists($pistolOutput)) { throw '生成手枪弹药补丁失败，游戏文件未修改。' }
+        [IO.File]::Copy($pistolOutput, (Join-Path $patched 'Assembly-CSharp.dll'), $true)
         foreach ($name in $payload | Where-Object { $_ -ne 'TakeoverChinese.dll' }) {
             [IO.File]::Copy((Join-Path $PSScriptRoot "translations\$name"), (Join-Path $stage $name))
         }
