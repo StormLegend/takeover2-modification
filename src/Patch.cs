@@ -61,6 +61,7 @@ internal static class Patch
                     Insert(m,true,Instruction.Create(OpCodes.Ldarg_0),
                         Instruction.Create(OpCodes.Ldfld,t.Fields.Single(f=>f.Name=="dialogueTable")),
                         Instruction.Create(OpCodes.Ldarg_1),Call(m,h,"OnLanguage"));
+                    PatchLifeThreshold(a);
                 }
                 else if (name=="Unity.TextMeshPro.dll")
                 {
@@ -84,6 +85,28 @@ internal static class Patch
                 a.Write(Path.Combine(args[1],name));
                 Console.WriteLine(name);
             }
+        }
+    }
+
+    private static void PatchLifeThreshold(AssemblyDefinition assembly)
+    {
+        var type = Type(assembly,"HutongGames.PlayMaker.Actions.AwardLivesFromScore");
+        var method = Method(type,"CheckScore");
+        foreach (var load in method.Body.Instructions.Where(i =>
+            i.OpCode == OpCodes.Ldfld && ((FieldReference)i.Operand).Name == "pointsPerLife").ToArray())
+        {
+            var read = load.Next;
+            var pushThis = load.Previous;
+            if (pushThis.OpCode != OpCodes.Ldarg_0 || read == null ||
+                read.OpCode != OpCodes.Callvirt ||
+                ((MethodReference)read.Operand).FullName !=
+                    "System.Int32 HutongGames.PlayMaker.FsmInt::get_Value()") continue;
+            pushThis.OpCode = OpCodes.Ldc_I4;
+            pushThis.Operand = 2000;
+            load.OpCode = OpCodes.Nop;
+            load.Operand = null;
+            read.OpCode = OpCodes.Nop;
+            read.Operand = null;
         }
     }
 }

@@ -18,6 +18,9 @@ jobs:
           zip="Takeover2-ZH-$GITHUB_REF_NAME.zip"
           git archive --format=zip --output="$zip" HEAD Install.cmd Uninstall.cmd Patch.ps1 README.md LICENSE NON-COMMERCIAL-NOTICE.md src translations vendor
           sha256sum "$zip" > "$zip.sha256"
-          gh release create "$GITHUB_REF_NAME" "$zip" "$zip.sha256" \
+          auto_zip="Takeover2-Auto-$GITHUB_REF_NAME.zip"
+          git archive --format=zip --output="$auto_zip" HEAD AutoInstall.cmd AutoUninstall.cmd AutoInstall.ps1 AutoUninstall.ps1 README.md LICENSE NON-COMMERCIAL-NOTICE.md runtime src translations
+          sha256sum "$auto_zip" > "$auto_zip.sha256"
+          gh release create "$GITHUB_REF_NAME" "$zip" "$zip.sha256" "$auto_zip" "$auto_zip.sha256" \
             --verify-tag --title "Takeover 2 简体中文与手枪弹药修改 $GITHUB_REF_NAME" \
-            --notes '适用 Windows Steam 版 Build 26580614。v1.2.0 修复 Steam 更新后补丁失效的问题，并保留人工润色的中文菜单、教程和成就文本，以及手枪弹药修改（上限 10,000 发、每包 +500 发）。下载 ZIP 并完整解压，退出游戏后双击 Install.cmd；卸载时双击 Uninstall.cmd。本项目仅供学习和非商业使用。'
+            --notes '适用 Windows Steam 版 Build 26580614。自动注入包首次运行 AutoInstall.cmd，之后由 BepInEx 在启动时应用简体中文、手枪弹药修改（上限 10,000 发、每包 +500 发）和 2000 分加命门槛，Steam 更新后通常无需重新安装。传统包仍保留 Install.cmd。两个版本均为非商业、仅供学习使用。'
